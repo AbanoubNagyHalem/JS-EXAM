@@ -1,0 +1,156 @@
+body {
+  background-color: black;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+.container {
+  width: 55%;
+}
+
+.group-nav li {
+  list-style-type: none;
+  padding-bottom: 19px;
+  padding-right: 20px;
+}
+
+.group-nav li a {
+  text-decoration: none;
+  color: white;
+}
+
+.card {
+  background-color: black;
+}
+
+.close {
+  display: none;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.left-bar {
+  display: inline-block;
+  position: relative;
+  display: none;
+}
+
+.full-nav {
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+  width: 70%;
+  background-color: aliceblue;
+  position: relative;
+  transition: 1s;
+}
+
+.full-nav img {
+  width: 60%;
+}
+
+.full-nav i {
+  cursor: pointer;
+}
+
+.full-nav .bar .click {
+  font-size: 25px;
+}
+
+/* //////////////////// */
+
+.main-1 {
+  width: 5%;
+  display: inline-block;
+}
+
+.main-2 {
+  color: white;
+}
+
+.form-control {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.7);
+  border-radius: 0;
+  color: #fff;
+  font-weight: 800;
+}
+
+.post img {
+  width: 100%;
+}
+
+.post {
+  position: relative;
+  width: 100%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+.post:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: black;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 100%;
+  width: 100%;
+  transform: translate(-50%, -38%);
+  text-align: center;
+  vertical-align: middle;
+}
+
+@media screen and (max-width: 1393px) {
+  .overlay p {
+    font-size: 15px;
+  }
+}
+
+/* On screens that are 600px or less, set the background color to olive */
+@media screen and (max-width: 1179px) {
+  .overlay p {
+    font-size: 10px;
+  }
+}
+
+.contact {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.contact input {
+  margin-bottom: 50px;
+}
